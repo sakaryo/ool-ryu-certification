@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Ryu Certification - __TITLE__
+title: Ryu Certification - PICA8
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
-* __TITLE__
-* [Configuration](http://osrg.github.io/ryu-certification/switch/config/__TITLE__.html)
+* PICA8
+* [Configuration](http://osrg.github.io/ryu-certification/switch/config/PICA8.html)
 
 | |OK|ERROR|
 |----------|---|---|
