@@ -5,7 +5,6 @@ title: Ryu Certification - PICA8
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
 * PICA8
-* [Configuration](http://osrg.github.io/ryu-certification/switch/config/PICA8.html)
 
 | |OK|ERROR|
 |----------|---|---|
