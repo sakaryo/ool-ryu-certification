@@ -464,7 +464,7 @@ title: Ryu Certification - PICA8
 <pre>
     ethernet/ipv4(src='192.168.10.10')/tcp-->'ipv4_src=192.168.10.10,actions=set_field:10.10.10.10->ipv4_src,output:2' OK
     ethernet/vlan/ipv4(src='192.168.10.10')/tcp-->'ipv4_src=192.168.10.10,actions=set_field:10.10.10.10->ipv4_src,output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packets on tester.
     ethernet/mpls/ipv4(src='192.168.10.10')/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ipv4_src=192.168.10.10,actions=set_field:10.10.10.10->ipv4_src,output:2' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/itag/ethernet/ipv4(src='192.168.10.10')/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ipv4_src=192.168.10.10,actions=set_field:10.10.10.10->ipv4_src,output:2' ERROR
@@ -885,7 +885,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet(src='12:11:11:11:11:11')/ipv6/tcp-->'eth_src=12:11:11:11:11:11,actions=output:2'            OK
     ethernet(src='12:11:11:11:11:11')/ipv6/tcp-->'eth_src=12:11:11:11:11:11,actions=output:CONTROLLER'   OK
     ethernet(src='aa:aa:aa:aa:aa:aa')/ipv6/tcp-->'eth_src=12:11:11:11:11:11,actions=output:2'            ERROR
-        Table-miss error: increment in matched_count.
+        Table-miss error: no change in lookup_count.
     ethernet(src='12:11:11:11:11:11')/arp-->'eth_src=12:11:11:11:11:11,actions=output:2'                 OK
     ethernet(src='12:11:11:11:11:11')/arp-->'eth_src=12:11:11:11:11:11,actions=output:CONTROLLER'        OK
     ethernet(src='aa:aa:aa:aa:aa:aa')/arp-->'eth_src=12:11:11:11:11:11,actions=output:2'                 ERROR
@@ -900,7 +900,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet(src='12:11:11:11:11:11')/ipv6/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' OK
     ethernet(src='12:11:11:11:11:11')/ipv6/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:CONTROLLER' OK
     ethernet(src='aa:aa:aa:aa:aa:aa')/ipv6/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' ERROR
-        Table-miss error: no change in lookup_count.
+        Table-miss error: increment in matched_count.
     ethernet(src='12:11:11:11:11:11')/arp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' OK
     ethernet(src='12:11:11:11:11:11')/arp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:CONTROLLER' OK
     ethernet(src='aa:aa:aa:aa:aa:aa')/arp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' ERROR
@@ -1204,7 +1204,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/ipv4(dst='10.10.20.20')/tcp-->'ipv4_dst=192.168.20.20,actions=output:2'                ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv4(dst='192.168.20.20')/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ipv4_dst=192.168.20.20,actions=output:2' ERROR
-        Receiving timeout: no change in rx_packtes on target.
+        Receiving timeout: no change in tx_packets on target.
     ethernet/mpls/ipv4(dst='192.168.20.20')/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ipv4_dst=192.168.20.20,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv4(dst='10.10.20.20')/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ipv4_dst=192.168.20.20,actions=output:2' ERROR
@@ -1300,7 +1300,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/ipv4/udp(src_port=12345)-->'udp_src=11111,actions=output:2'                            ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv4/udp(src_port=11111)-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,udp_src=11111,actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv4/udp(src_port=11111)-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,udp_src=11111,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv4/udp(src_port=12345)-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,udp_src=11111,actions=output:2' ERROR
@@ -1367,7 +1367,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/ipv4/sctp(dst_port=6789)-->'sctp_dst=2222,actions=output:2'                                 ERROR
         Table-miss error: no change in lookup_count.
     ethernet/vlan/ipv4/sctp(dst_port=2222)-->'sctp_dst=2222,actions=output:2'                            ERROR
-        Receiving timeout: no change in rx_packets on tester.
+        Receiving timeout: no change in tx_packets on target.
     ethernet/vlan/ipv4/sctp(dst_port=2222)-->'sctp_dst=2222,actions=output:CONTROLLER'                   OK
     ethernet/vlan/ipv4/sctp(dst_port=6789)-->'sctp_dst=2222,actions=output:2'                            ERROR
         Table-miss error: no change in lookup_count.
@@ -1494,7 +1494,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/ipv6/tcp(src_port=12345)-->'tcp_src=11111,actions=output:2'                            ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv6/tcp(src_port=11111)-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,tcp_src=11111,actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv6/tcp(src_port=11111)-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,tcp_src=11111,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv6/tcp(src_port=12345)-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,tcp_src=11111,actions=output:2' ERROR
@@ -1566,7 +1566,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/ipv6/udp(dst_port=6789)-->'udp_dst=2222,actions=output:2'                              ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv6/udp(dst_port=2222)-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,udp_dst=2222,actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv6/udp(dst_port=2222)-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,udp_dst=2222,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv6/udp(dst_port=6789)-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,udp_dst=2222,actions=output:2' ERROR
@@ -1585,7 +1585,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/ipv6/sctp(src_port=12345)-->'sctp_src=11111,actions=output:2'                               ERROR
         Table-miss error: no change in lookup_count.
     ethernet/vlan/ipv6/sctp(src_port=11111)-->'sctp_src=11111,actions=output:2'                          ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packets on tester.
     ethernet/vlan/ipv6/sctp(src_port=11111)-->'sctp_src=11111,actions=output:CONTROLLER'                 OK
     ethernet/vlan/ipv6/sctp(src_port=12345)-->'sctp_src=11111,actions=output:2'                          ERROR
         Table-miss error: no change in lookup_count.
@@ -1638,7 +1638,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/ipv6(src='a0::a0')/tcp-->'ipv6_src=10::10,actions=output:2'                            ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv6(src='10::10')/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_src=10::10,actions=output:2' ERROR
-        Receiving timeout: no change in rx_packtes on target.
+        Receiving timeout: no change in tx_packets on target.
     ethernet/mpls/ipv6(src='10::10')/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_src=10::10,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv6(src='a0::a0')/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_src=10::10,actions=output:2' ERROR
@@ -1862,7 +1862,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/arp(src_mac='aa:aa:aa:aa:aa:aa')-->'arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:2' ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/arp(src_mac='12:11:11:11:11:11')-->'actions=pop_mpls:0x0806,goto_table:1','table_id:1,arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:2' ERROR
-        Receiving timeout: no change in rx_packtes on target.
+        Receiving timeout: no change in tx_packets on target.
     ethernet/mpls/arp(src_mac='12:11:11:11:11:11')-->'actions=pop_mpls:0x0806,goto_table:1','table_id:1,arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/arp(src_mac='aa:aa:aa:aa:aa:aa')-->'actions=pop_mpls:0x0806,goto_table:1','table_id:1,arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:2' ERROR
@@ -1946,7 +1946,7 @@ dpid=0000000000000001 : Join target SW.
     2Mbps(ethernet/ipv4(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' OK
 ..........
     2Mbps(ethernet/ipv6(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 1983.42kbps
+        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 1984.93kbps
 ..........
     2Mbps(ethernet/arp(src_ip=random,dst_ip=random)-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' OK
 </pre>
