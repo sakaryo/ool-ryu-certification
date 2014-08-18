@@ -11,19 +11,19 @@ title: Ryu Certification - PICA8
 |[Action](#Action)|10|46|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(7)|&nbsp;&nbsp;&nbsp;&nbsp;(46)|
-|[set_field](#set_field)|26|144|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(26)|&nbsp;&nbsp;&nbsp;&nbsp;(144)|
-|[Match](#Match)|158|406|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(70)|&nbsp;&nbsp;&nbsp;&nbsp;(38)|
+|[set_field](#set_field)|25|141|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(25)|&nbsp;&nbsp;&nbsp;&nbsp;(141)|
+|[Match](#Match)|157|407|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(69)|&nbsp;&nbsp;&nbsp;&nbsp;(39)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(88)|&nbsp;&nbsp;&nbsp;&nbsp;(368)|
 |[Group](#Group)|8|7|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(5)|&nbsp;&nbsp;&nbsp;&nbsp;(7)|
 |[Meter](#Meter)|0|36|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|&nbsp;&nbsp;&nbsp;&nbsp;(36)|
-|Total|202|639|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(76)|&nbsp;&nbsp;&nbsp;&nbsp;(38)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(126)|&nbsp;&nbsp;&nbsp;&nbsp;(601)|
+|Total|200|637|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(75)|&nbsp;&nbsp;&nbsp;&nbsp;(39)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(125)|&nbsp;&nbsp;&nbsp;&nbsp;(598)|
 
 ## <a name ='Action'>Action</a>
 
@@ -98,7 +98,6 @@ title: Ryu Certification - PICA8
 |[IPV6_ND_TARGET](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/31_IPV6_ND_TARGET.json)|- | [ERROR](#58bb5b87b10120375648d5dfa160d66d) | [ERROR](#58bb5b87b10120375648d5dfa160d66d) | [ERROR](#58bb5b87b10120375648d5dfa160d66d) | [ERROR](#58bb5b87b10120375648d5dfa160d66d) |
 |[IPV6_ND_SLL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/32_IPV6_ND_SLL.json)|- | [ERROR](#03e6c802327cd4456ae80d74286cc133) | [ERROR](#03e6c802327cd4456ae80d74286cc133) | [ERROR](#03e6c802327cd4456ae80d74286cc133) | [ERROR](#03e6c802327cd4456ae80d74286cc133) |
 |[IPV6_ND_TLL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/33_IPV6_ND_TLL.json)|- | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) |
-|[ARP_OP](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/21_ARP_OP.json)|- | [OK](#edeb0a1b010613250527e2a03c53b549) | [ERROR](#edeb0a1b010613250527e2a03c53b549) | [ERROR](#edeb0a1b010613250527e2a03c53b549) | [ERROR](#edeb0a1b010613250527e2a03c53b549) |
 |[ARP_SPA](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/22_ARP_SPA.json)|- | [OK](#191830a3949f9206a79ee85da5c0d7c3) | [ERROR](#191830a3949f9206a79ee85da5c0d7c3) | [ERROR](#191830a3949f9206a79ee85da5c0d7c3) | [ERROR](#191830a3949f9206a79ee85da5c0d7c3) |
 |[ARP_TPA](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/23_ARP_TPA.json)|- | [OK](#cef72d4ba1780a3c9b67b48a33eed3a7) | [ERROR](#cef72d4ba1780a3c9b67b48a33eed3a7) | [ERROR](#cef72d4ba1780a3c9b67b48a33eed3a7) | [ERROR](#cef72d4ba1780a3c9b67b48a33eed3a7) |
 |[ARP_SHA](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/24_ARP_SHA.json)|- | [OK](#b81664d2c1b70f417d5a1d0a03ea0a1c) | [ERROR](#b81664d2c1b70f417d5a1d0a03ea0a1c) | [ERROR](#b81664d2c1b70f417d5a1d0a03ea0a1c) | [ERROR](#b81664d2c1b70f417d5a1d0a03ea0a1c) |
@@ -111,7 +110,7 @@ title: Ryu Certification - PICA8
 |[IN_PORT](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/00_IN_PORT.json)|x | [OK](#676630805778c633439bbf5baeeb1fc3) / [ERROR](#676630805778c633439bbf5baeeb1fc3) / [ERROR](#676630805778c633439bbf5baeeb1fc3) | [OK](#676630805778c633439bbf5baeeb1fc3) / [ERROR](#676630805778c633439bbf5baeeb1fc3) / [ERROR](#676630805778c633439bbf5baeeb1fc3) | [OK](#676630805778c633439bbf5baeeb1fc3) / [OK](#676630805778c633439bbf5baeeb1fc3) / [ERROR](#676630805778c633439bbf5baeeb1fc3) |
 |[METADATA](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/02_METADATA.json)|- | [OK](#0dc0b3013fed3082c5fe85fedf717c56) / [OK](#0dc0b3013fed3082c5fe85fedf717c56) / [ERROR](#0dc0b3013fed3082c5fe85fedf717c56) | [OK](#0dc0b3013fed3082c5fe85fedf717c56) / [OK](#0dc0b3013fed3082c5fe85fedf717c56) / [ERROR](#0dc0b3013fed3082c5fe85fedf717c56) | [OK](#0dc0b3013fed3082c5fe85fedf717c56) / [OK](#0dc0b3013fed3082c5fe85fedf717c56) / [ERROR](#0dc0b3013fed3082c5fe85fedf717c56) |
 |[METADATA (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/02_METADATA_Mask.json)|- | [OK](#a2f35fb4c31f68b07ba0bbeb91463095) / [OK](#a2f35fb4c31f68b07ba0bbeb91463095) / [ERROR](#a2f35fb4c31f68b07ba0bbeb91463095) | [OK](#a2f35fb4c31f68b07ba0bbeb91463095) / [OK](#a2f35fb4c31f68b07ba0bbeb91463095) / [ERROR](#a2f35fb4c31f68b07ba0bbeb91463095) | [OK](#a2f35fb4c31f68b07ba0bbeb91463095) / [OK](#a2f35fb4c31f68b07ba0bbeb91463095) / [ERROR](#a2f35fb4c31f68b07ba0bbeb91463095) |
-|[ETH_DST](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/03_ETH_DST.json)|x | [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [ERROR](#fe864e7ac5b2d7b2aafc87bbd83da455) | [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [ERROR](#fe864e7ac5b2d7b2aafc87bbd83da455) | [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [ERROR](#fe864e7ac5b2d7b2aafc87bbd83da455) |
+|[ETH_DST](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/03_ETH_DST.json)|x | [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [ERROR](#fe864e7ac5b2d7b2aafc87bbd83da455) | [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [ERROR](#fe864e7ac5b2d7b2aafc87bbd83da455) | [OK](#fe864e7ac5b2d7b2aafc87bbd83da455) / [ERROR](#fe864e7ac5b2d7b2aafc87bbd83da455) / [ERROR](#fe864e7ac5b2d7b2aafc87bbd83da455) |
 |[ETH_DST (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/03_ETH_DST_Mask.json)|x | [OK](#5ed9ace27a5ca3fbb2c38d1b7d629927) / [OK](#5ed9ace27a5ca3fbb2c38d1b7d629927) / [ERROR](#5ed9ace27a5ca3fbb2c38d1b7d629927) | [OK](#5ed9ace27a5ca3fbb2c38d1b7d629927) / [OK](#5ed9ace27a5ca3fbb2c38d1b7d629927) / [ERROR](#5ed9ace27a5ca3fbb2c38d1b7d629927) | [OK](#5ed9ace27a5ca3fbb2c38d1b7d629927) / [OK](#5ed9ace27a5ca3fbb2c38d1b7d629927) / [ERROR](#5ed9ace27a5ca3fbb2c38d1b7d629927) |
 |[ETH_SRC](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/04_ETH_SRC.json)|x | [OK](#53d2200d33a46dfb67a5beb2a7eb4735) / [OK](#53d2200d33a46dfb67a5beb2a7eb4735) / [ERROR](#53d2200d33a46dfb67a5beb2a7eb4735) | [OK](#53d2200d33a46dfb67a5beb2a7eb4735) / [OK](#53d2200d33a46dfb67a5beb2a7eb4735) / [ERROR](#53d2200d33a46dfb67a5beb2a7eb4735) | [OK](#53d2200d33a46dfb67a5beb2a7eb4735) / [OK](#53d2200d33a46dfb67a5beb2a7eb4735) / [ERROR](#53d2200d33a46dfb67a5beb2a7eb4735) |
 |[ETH_SRC (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/04_ETH_SRC_Mask.json)|x | [OK](#f1bb7ed0d6f1c34334a73e3a23554482) / [OK](#f1bb7ed0d6f1c34334a73e3a23554482) / [ERROR](#f1bb7ed0d6f1c34334a73e3a23554482) | [OK](#f1bb7ed0d6f1c34334a73e3a23554482) / [OK](#f1bb7ed0d6f1c34334a73e3a23554482) / [ERROR](#f1bb7ed0d6f1c34334a73e3a23554482) | [OK](#f1bb7ed0d6f1c34334a73e3a23554482) / [OK](#f1bb7ed0d6f1c34334a73e3a23554482) / [ERROR](#f1bb7ed0d6f1c34334a73e3a23554482) |
@@ -746,19 +745,6 @@ title: Ryu Certification - PICA8
     ethernet/itag/ethernet/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' ERROR
         Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
 </pre>
-<a name="edeb0a1b010613250527e2a03c53b549">action: set_field: 21_ARP_OP</a>
-<pre>
-    ethernet/arp(opcode=1)-->'arp_op=1,actions=set_field:2->arp_op,output:2'                             OK
-dpid=0000000000000001 : Leave target SW.
-    ethernet/vlan/arp(opcode=1)-->'arp_op=1,actions=set_field:2->arp_op,output:2'                        ERROR
-        Failed to add flows: flow stats request timeout.
-waiting for switches connection...
-dpid=0000000000000001 : Join target SW.
-    ethernet/mpls/arp(opcode=1)-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,arp_op=1,actions=set_field:2->arp_op,output:2' ERROR
-        Receiving timeout: no change in rx_packtes on target.
-    ethernet/itag/ethernet/arp(opcode=1)-->'actions=pop_pbb,goto_table:1','table_id:1,arp_op=1,actions=set_field:2->arp_op,output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
-</pre>
 <a name="191830a3949f9206a79ee85da5c0d7c3">action: set_field: 22_ARP_SPA</a>
 <pre>
     ethernet/arp(src_ip='192.168.10.10')-->'arp_spa=192.168.10.10,actions=set_field:10.10.10.10->arp_spa,output:2' OK
@@ -772,8 +758,13 @@ dpid=0000000000000001 : Join target SW.
 <a name="cef72d4ba1780a3c9b67b48a33eed3a7">action: set_field: 23_ARP_TPA</a>
 <pre>
     ethernet/arp(dst_ip='192.168.20.20')-->'arp_tpa=192.168.20.20,actions=set_field:10.10.20.20->arp_tpa,output:2' OK
+dpid=0000000000000001 : Leave target SW.
     ethernet/vlan/arp(dst_ip='192.168.20.20')-->'arp_tpa=192.168.20.20,actions=set_field:10.10.20.20->arp_tpa,output:2' ERROR
-        Receiving timeout: no change in rx_packets on tester.
+        Failed to add flows: flow stats request timeout.
+waiting for switches connection...
+dpid=0000000000000002 : Leave tester SW.
+dpid=0000000000000002 : Join tester SW.
+dpid=0000000000000001 : Join target SW.
     ethernet/mpls/arp(dst_ip='192.168.20.20')-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,arp_tpa=192.168.20.20,actions=set_field:10.10.20.20->arp_tpa,output:2' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/itag/ethernet/arp(dst_ip='192.168.20.20')-->'actions=pop_pbb,goto_table:1','table_id:1,arp_tpa=192.168.20.20,actions=set_field:10.10.20.20->arp_tpa,output:2' ERROR
@@ -857,7 +848,8 @@ dpid=0000000000000001 : Join target SW.
     ethernet(dst='ba:bb:bb:bb:bb:bb')/ipv6/tcp-->'eth_dst=22:22:22:22:22:22,actions=output:2'            ERROR
         Table-miss error: increment in matched_count.
     ethernet(dst='22:22:22:22:22:22')/arp-->'eth_dst=22:22:22:22:22:22,actions=output:2'                 OK
-    ethernet(dst='22:22:22:22:22:22')/arp-->'eth_dst=22:22:22:22:22:22,actions=output:CONTROLLER'        OK
+    ethernet(dst='22:22:22:22:22:22')/arp-->'eth_dst=22:22:22:22:22:22,actions=output:CONTROLLER'        ERROR
+        Received incorrect packet-in: SW[dpid=0000000000000002]
     ethernet(dst='ba:bb:bb:bb:bb:bb')/arp-->'eth_dst=22:22:22:22:22:22,actions=output:2'                 ERROR
         Table-miss error: increment in matched_count.
 </pre>
@@ -896,11 +888,11 @@ dpid=0000000000000001 : Join target SW.
     ethernet(src='12:11:11:11:11:11')/ipv4/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' OK
     ethernet(src='12:11:11:11:11:11')/ipv4/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:CONTROLLER' OK
     ethernet(src='aa:aa:aa:aa:aa:aa')/ipv4/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' ERROR
-        Table-miss error: increment in matched_count.
+        Table-miss error: no change in lookup_count.
     ethernet(src='12:11:11:11:11:11')/ipv6/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' OK
     ethernet(src='12:11:11:11:11:11')/ipv6/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:CONTROLLER' OK
     ethernet(src='aa:aa:aa:aa:aa:aa')/ipv6/tcp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' ERROR
-        Table-miss error: increment in matched_count.
+        Table-miss error: no change in lookup_count.
     ethernet(src='12:11:11:11:11:11')/arp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' OK
     ethernet(src='12:11:11:11:11:11')/arp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:CONTROLLER' OK
     ethernet(src='aa:aa:aa:aa:aa:aa')/arp-->'eth_src=00:11:11:11:11:11(mask=00:ff:ff:ff:ff:ff),actions=output:2' ERROR
@@ -1197,14 +1189,14 @@ dpid=0000000000000001 : Join target SW.
     ethernet/ipv4(dst='192.168.20.20')/tcp-->'ipv4_dst=192.168.20.20,actions=output:2'                   OK
     ethernet/ipv4(dst='192.168.20.20')/tcp-->'ipv4_dst=192.168.20.20,actions=output:CONTROLLER'          OK
     ethernet/ipv4(dst='10.10.20.20')/tcp-->'ipv4_dst=192.168.20.20,actions=output:2'                     ERROR
-        Table-miss error: no change in lookup_count.
+        Table-miss error: increment in matched_count.
     ethernet/vlan/ipv4(dst='192.168.20.20')/tcp-->'ipv4_dst=192.168.20.20,actions=output:2'              ERROR
         Receiving timeout: no change in tx_packets on target.
     ethernet/vlan/ipv4(dst='192.168.20.20')/tcp-->'ipv4_dst=192.168.20.20,actions=output:CONTROLLER'     OK
     ethernet/vlan/ipv4(dst='10.10.20.20')/tcp-->'ipv4_dst=192.168.20.20,actions=output:2'                ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv4(dst='192.168.20.20')/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ipv4_dst=192.168.20.20,actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv4(dst='192.168.20.20')/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ipv4_dst=192.168.20.20,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv4(dst='10.10.20.20')/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ipv4_dst=192.168.20.20,actions=output:2' ERROR
@@ -1276,7 +1268,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/ipv4/tcp(dst_port=6789)-->'tcp_dst=2222,actions=output:2'                              ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv4/tcp(dst_port=2222)-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,tcp_dst=2222,actions=output:2' ERROR
-        Receiving timeout: no change in rx_packtes on target.
+        Receiving timeout: no change in tx_packets on target.
     ethernet/mpls/ipv4/tcp(dst_port=2222)-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,tcp_dst=2222,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv4/tcp(dst_port=6789)-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,tcp_dst=2222,actions=output:2' ERROR
@@ -1585,7 +1577,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/ipv6/sctp(src_port=12345)-->'sctp_src=11111,actions=output:2'                               ERROR
         Table-miss error: no change in lookup_count.
     ethernet/vlan/ipv6/sctp(src_port=11111)-->'sctp_src=11111,actions=output:2'                          ERROR
-        Receiving timeout: no change in rx_packets on tester.
+        Receiving timeout: no change in tx_packets on target.
     ethernet/vlan/ipv6/sctp(src_port=11111)-->'sctp_src=11111,actions=output:CONTROLLER'                 OK
     ethernet/vlan/ipv6/sctp(src_port=12345)-->'sctp_src=11111,actions=output:2'                          ERROR
         Table-miss error: no change in lookup_count.
@@ -1638,7 +1630,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/ipv6(src='a0::a0')/tcp-->'ipv6_src=10::10,actions=output:2'                            ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/ipv6(src='10::10')/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_src=10::10,actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv6(src='10::10')/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_src=10::10,actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/ipv6(src='a0::a0')/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_src=10::10,actions=output:2' ERROR
@@ -1862,7 +1854,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/vlan/arp(src_mac='aa:aa:aa:aa:aa:aa')-->'arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:2' ERROR
         Table-miss error: no change in lookup_count.
     ethernet/mpls/arp(src_mac='12:11:11:11:11:11')-->'actions=pop_mpls:0x0806,goto_table:1','table_id:1,arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/arp(src_mac='12:11:11:11:11:11')-->'actions=pop_mpls:0x0806,goto_table:1','table_id:1,arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:CONTROLLER' ERROR
         Receiving timeout: no change in rx_packtes on target.
     ethernet/mpls/arp(src_mac='aa:aa:aa:aa:aa:aa')-->'actions=pop_mpls:0x0806,goto_table:1','table_id:1,arp_sha=12:11:11:00:11:11(mask=ff:ff:ff:00:ff:ff),actions=output:2' ERROR
@@ -1881,7 +1873,7 @@ dpid=0000000000000001 : Join target SW.
     ethernet/arp(dst_mac='ba:bb:bb:bb:bb:bb')-->'arp_tha=22:22:22:22:22:22,actions=output:2'             ERROR
         Table-miss error: no change in lookup_count.
     ethernet/vlan/arp(dst_mac='22:22:22:22:22:22')-->'arp_tha=22:22:22:22:22:22,actions=output:2'        ERROR
-        Receiving timeout: no change in tx_packets on target.
+        Receiving timeout: no change in rx_packets on tester.
     ethernet/vlan/arp(dst_mac='22:22:22:22:22:22')-->'arp_tha=22:22:22:22:22:22,actions=output:CONTROLLER' OK
     ethernet/vlan/arp(dst_mac='ba:bb:bb:bb:bb:bb')-->'arp_tha=22:22:22:22:22:22,actions=output:2'        ERROR
         Table-miss error: no change in lookup_count.
@@ -1946,7 +1938,7 @@ dpid=0000000000000001 : Join target SW.
     2Mbps(ethernet/ipv4(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' OK
 ..........
     2Mbps(ethernet/ipv6(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 1984.93kbps
+        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 1982.12kbps
 ..........
     2Mbps(ethernet/arp(src_ip=random,dst_ip=random)-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' OK
 </pre>
