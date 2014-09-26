@@ -8,9 +8,9 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
 
 | |OK|ERROR|
 |----------|---|---|
-|[Action](#Action)|49|7|
+|[Action](#Action)|52|7|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(46)|&nbsp;&nbsp;&nbsp;&nbsp;(7)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(49)|&nbsp;&nbsp;&nbsp;&nbsp;(7)|
 |[set_field](#set_field)|123|47|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(123)|&nbsp;&nbsp;&nbsp;&nbsp;(47)|
 |[Match](#Match)|565|149|
@@ -21,9 +21,9 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(12)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |[Meter](#Meter)|22|14|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(22)|&nbsp;&nbsp;&nbsp;&nbsp;(14)|
-|Total|774|217|
+|Total|777|217|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(114)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(660)|&nbsp;&nbsp;&nbsp;&nbsp;(217)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(663)|&nbsp;&nbsp;&nbsp;&nbsp;(217)|
 
 ## <a name ='Action'>Action</a>
 
@@ -31,6 +31,7 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
 |-----------|----|----|----|----|
 |[OUTPUT](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/00_OUTPUT.json)|x | [OK](#7a352e3512f38379b485f134027ab25c) | [OK](#7a352e3512f38379b485f134027ab25c) | [OK](#7a352e3512f38379b485f134027ab25c) |
 |[PUSH_VLAN](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/17_PUSH_VLAN.json)|- | [OK](#0ff360d2030da3a14f9fbeb67a5eb9d7) | [OK](#0ff360d2030da3a14f9fbeb67a5eb9d7) | [OK](#0ff360d2030da3a14f9fbeb67a5eb9d7) |
+|[PUSH_VLAN_OOL](https://github.com/oolorg/ool-ryu-certification/tree/master/test_scenario/of13/action/17_PUSH_VLAN_OOL.json)|- | [OK](#3974e45a5abaad7080eef07a82b3e130) | [OK](#3974e45a5abaad7080eef07a82b3e130) | [OK](#3974e45a5abaad7080eef07a82b3e130) |
 |[PUSH_MPLS](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/19_PUSH_MPLS.json)|- | [OK](#84114b5397172ba5a314008b52c36388) | [OK](#84114b5397172ba5a314008b52c36388) | [OK](#84114b5397172ba5a314008b52c36388) |
 |[PUSH_PBB](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/26_PUSH_PBB.json)|- | [OK](#5d818f5bd3c537066c61f0a9a71df0b3) | [OK](#5d818f5bd3c537066c61f0a9a71df0b3) | [OK](#5d818f5bd3c537066c61f0a9a71df0b3) |
 |[PUSH_VLAN (multiple)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/17_PUSH_VLAN_multiple.json)|- | [OK](#cdf28d261795cce41af2b316f024c762) | [OK](#cdf28d261795cce41af2b316f024c762) | [OK](#cdf28d261795cce41af2b316f024c762) |
@@ -215,6 +216,12 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
     ethernet/ipv4/tcp-->'eth_type=0x0800,actions=push_vlan:0x8100,output:2'                              OK
     ethernet/ipv6/tcp-->'eth_type=0x86dd,actions=push_vlan:0x8100,output:2'                              OK
     ethernet/arp-->'eth_type=0x0806,actions=push_vlan:0x8100,output:2'                                   OK
+</pre>
+<a name="3974e45a5abaad7080eef07a82b3e130">action: 17_PUSH_VLAN_OOL</a>
+<pre>
+    ethernet/ipv4/tcp-->'eth_type=0x0800,actions=push_vlan:0x8100,set_field:100->vlan_id,output:2'       OK
+    ethernet/ipv6/tcp-->'eth_type=0x86dd,actions=push_vlan:0x8100,set_field:100->vlan_id,output:2'       OK
+    ethernet/arp-->'eth_type=0x0806,actions=push_vlan:0x8100,set_field:100->vlan_id,output:2'            OK
 </pre>
 <a name="84114b5397172ba5a314008b52c36388">action: 19_PUSH_MPLS</a>
 <pre>
@@ -1834,7 +1841,7 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
         Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00kbps
 ..........
     2Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:1Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 1988.12kbps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 1993.20kbps
 ..........
     2Mbps(ethernet/arp)-->'in_port=1,actions=meter:2Mbps(dscp_remark:prec_level=1),output:2'             OK
 </pre>
@@ -1845,21 +1852,21 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
         Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00kbps
 ..........
     20Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:10Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 19896.15kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 19903.82kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps
 ..........
     20Mbps(ethernet/arp)-->'in_port=1,actions=meter:20Mbps(dscp_remark:prec_level=1),output:2'           OK
 </pre>
 <a name="c915561eabc278589470d2187cb110f2">meter: 02_DSCP_REMARK_00_KBPS_02_100M</a>
 <pre>
-.........
+.......
     200Mbps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00kbps, {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 18} 164438.61kbps
-.........
+        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00kbps
+........
     200Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 164131.19kbps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 161090.40kbps
 .........
     200Mbps(ethernet/arp)-->'in_port=1,actions=meter:200Mbps(dscp_remark:prec_level=1),output:2'         ERROR
-        Received unexpected throughput: {'in_port': 2} 173386.59kbps
+        Received unexpected throughput: {'in_port': 2} 174556.01kbps
 </pre>
 <a name="50fc5b625263a400208fee338d37d088">meter: 02_DSCP_REMARK_01_PKTPS_00_100</a>
 <pre>
@@ -1868,7 +1875,7 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
         Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00pktps
 ..........
     200pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 194.38pktps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 194.45pktps
 ..........
     200pktps(ethernet/arp)-->'in_port=1,actions=meter:200pktps(dscp_remark:prec_level=1),output:2'       OK
 </pre>
@@ -1876,10 +1883,10 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
 <pre>
 ..........
     2000pktps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:1000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 18} 1940.87pktps
+        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00pktps
 ..........
     2000pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:1000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 1942.47pktps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 1941.11pktps
 ..........
     2000pktps(ethernet/arp)-->'in_port=1,actions=meter:2000pktps(dscp_remark:prec_level=1),output:2'     OK
 </pre>
@@ -1888,10 +1895,10 @@ title: Ryu Certification - HUAWEI CE6850(SN640)
 ......
     20000pktps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
         Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 0.00pktps
-.......
+........
     20000pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 13590.64pktps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 14162.12pktps
 ........
     20000pktps(ethernet/arp)-->'in_port=1,actions=meter:20000pktps(dscp_remark:prec_level=1),output:2'   ERROR
-        Received unexpected throughput: {'in_port': 2} 14763.56pktps
+        Received unexpected throughput: {'in_port': 2} 15094.03pktps
 </pre>
