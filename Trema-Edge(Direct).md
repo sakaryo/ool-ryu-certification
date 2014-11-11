@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Ryu Certification - Trema-Edge(Direct)
+title: Ryu Certification - OOL SWITCH
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
-* Trema-Edge(Direct)
+* OOL SWITCH
 
 | |OK|ERROR|
 |----------|---|---|
@@ -19,11 +19,11 @@ title: Ryu Certification - Trema-Edge(Direct)
 |[Group](#Group)|15|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(12)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|[Meter](#Meter)|30|6|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(30)|&nbsp;&nbsp;&nbsp;&nbsp;(6)|
-|Total|965|29|
+|[Meter](#Meter)|31|5|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(31)|&nbsp;&nbsp;&nbsp;&nbsp;(5)|
+|Total|966|28|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(114)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(851)|&nbsp;&nbsp;&nbsp;&nbsp;(29)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(852)|&nbsp;&nbsp;&nbsp;&nbsp;(28)|
 
 ## <a name ='Action'>Action</a>
 
@@ -202,7 +202,7 @@ title: Ryu Certification - Trema-Edge(Direct)
 |[DSCP_REMARK_00_KBPS_02_100M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_02_100M.json)|- | [ERROR](#c915561eabc278589470d2187cb110f2) | [ERROR](#c915561eabc278589470d2187cb110f2) | [ERROR](#c915561eabc278589470d2187cb110f2) |
 |[DSCP_REMARK_01_PKTPS_00_100](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_00_100.json)|- | [OK](#50fc5b625263a400208fee338d37d088) | [OK](#50fc5b625263a400208fee338d37d088) | [OK](#50fc5b625263a400208fee338d37d088) |
 |[DSCP_REMARK_01_PKTPS_01_1000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_01_1000.json)|- | [OK](#a90e19ea457ae862fc5292fca16226bb) | [OK](#a90e19ea457ae862fc5292fca16226bb) | [OK](#a90e19ea457ae862fc5292fca16226bb) |
-|[DSCP_REMARK_01_PKTPS_02_10000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_02_10000.json)|- | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [ERROR](#638dd569a77001f62f3f1f9f267daea8) |
+|[DSCP_REMARK_01_PKTPS_02_10000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_02_10000.json)|- | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [OK](#638dd569a77001f62f3f1f9f267daea8) |
 
 ## Detailed log
 <a name="7a352e3512f38379b485f134027ab25c">action: 00_OUTPUT</a>
@@ -1647,11 +1647,11 @@ title: Ryu Certification - Trema-Edge(Direct)
 </pre>
 <a name="41aa053a730cd3a8949410c96489828f">meter: 01_DROP_01_PKTPS_02_10000</a>
 <pre>
-.........
+..........
     20000pktps(ethernet/ipv4/tcp)-->'in_port=1,actions=meter:10000pktps(drop),output:2'                  OK
-.........
+..........
     20000pktps(ethernet/ipv6/tcp)-->'in_port=1,actions=meter:10000pktps(drop),output:2'                  OK
-.........
+..........
     20000pktps(ethernet/arp)-->'in_port=1,actions=meter:10000pktps(drop),output:2'                       OK
 </pre>
 <a name="b5ce2897cf7d803b22135f5fd7421b38">meter: 02_DSCP_REMARK_00_KBPS_00_1M</a>
@@ -1674,15 +1674,15 @@ title: Ryu Certification - Trema-Edge(Direct)
 </pre>
 <a name="c915561eabc278589470d2187cb110f2">meter: 02_DSCP_REMARK_00_KBPS_02_100M</a>
 <pre>
-.........
+..........
     200Mbps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 73067.02kbps
-.........
+        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 84292.44kbps
+..........
     200Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 73421.50kbps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 84580.26kbps
 .........
     200Mbps(ethernet/arp)-->'in_port=1,actions=meter:200Mbps(dscp_remark:prec_level=1),output:2'         ERROR
-        Received unexpected throughput: {'in_port': 2} 176399.63kbps
+        Received unexpected throughput: {'in_port': 2} 167279.93kbps
 </pre>
 <a name="50fc5b625263a400208fee338d37d088">meter: 02_DSCP_REMARK_01_PKTPS_00_100</a>
 <pre>
@@ -1704,13 +1704,12 @@ title: Ryu Certification - Trema-Edge(Direct)
 </pre>
 <a name="638dd569a77001f62f3f1f9f267daea8">meter: 02_DSCP_REMARK_01_PKTPS_02_10000</a>
 <pre>
-........
+..........
     20000pktps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 4624.14pktps
-........
+        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 8249.12pktps
+..........
     20000pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 4601.74pktps
-........
-    20000pktps(ethernet/arp)-->'in_port=1,actions=meter:20000pktps(dscp_remark:prec_level=1),output:2'   ERROR
-        Received unexpected throughput: {'in_port': 2} 15285.59pktps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 8160.19pktps
+..........
+    20000pktps(ethernet/arp)-->'in_port=1,actions=meter:20000pktps(dscp_remark:prec_level=1),output:2'   OK
 </pre>
