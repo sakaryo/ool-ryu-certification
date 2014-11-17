@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Ryu Certification - OOL SWITCH
+title: Ryu Certification - Trema-Edge(Direct)
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
-* OOL SWITCH
+* Trema-Edge(Direct)
 
 | |OK|ERROR|
 |----------|---|---|
@@ -19,11 +19,11 @@ title: Ryu Certification - OOL SWITCH
 |[Group](#Group)|15|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(12)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|[Meter](#Meter)|31|5|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(31)|&nbsp;&nbsp;&nbsp;&nbsp;(5)|
-|Total|966|28|
+|[Meter](#Meter)|33|3|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(33)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|
+|Total|968|26|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(114)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(852)|&nbsp;&nbsp;&nbsp;&nbsp;(28)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(854)|&nbsp;&nbsp;&nbsp;&nbsp;(26)|
 
 ## <a name ='Action'>Action</a>
 
@@ -199,7 +199,7 @@ title: Ryu Certification - OOL SWITCH
 |[DROP_01_PKTPS_02_10000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/01_DROP_01_PKTPS_02_10000.json)|- | [OK](#41aa053a730cd3a8949410c96489828f) | [OK](#41aa053a730cd3a8949410c96489828f) | [OK](#41aa053a730cd3a8949410c96489828f) |
 |[DSCP_REMARK_00_KBPS_00_1M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_00_1M.json)|- | [OK](#b5ce2897cf7d803b22135f5fd7421b38) | [OK](#b5ce2897cf7d803b22135f5fd7421b38) | [OK](#b5ce2897cf7d803b22135f5fd7421b38) |
 |[DSCP_REMARK_00_KBPS_01_10M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_01_10M.json)|- | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) |
-|[DSCP_REMARK_00_KBPS_02_100M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_02_100M.json)|- | [ERROR](#c915561eabc278589470d2187cb110f2) | [ERROR](#c915561eabc278589470d2187cb110f2) | [ERROR](#c915561eabc278589470d2187cb110f2) |
+|[DSCP_REMARK_00_KBPS_02_100M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_02_100M.json)|- | [OK](#c915561eabc278589470d2187cb110f2) | [ERROR](#c915561eabc278589470d2187cb110f2) | [OK](#c915561eabc278589470d2187cb110f2) |
 |[DSCP_REMARK_01_PKTPS_00_100](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_00_100.json)|- | [OK](#50fc5b625263a400208fee338d37d088) | [OK](#50fc5b625263a400208fee338d37d088) | [OK](#50fc5b625263a400208fee338d37d088) |
 |[DSCP_REMARK_01_PKTPS_01_1000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_01_1000.json)|- | [OK](#a90e19ea457ae862fc5292fca16226bb) | [OK](#a90e19ea457ae862fc5292fca16226bb) | [OK](#a90e19ea457ae862fc5292fca16226bb) |
 |[DSCP_REMARK_01_PKTPS_02_10000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_02_10000.json)|- | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [OK](#638dd569a77001f62f3f1f9f267daea8) |
@@ -1647,7 +1647,7 @@ title: Ryu Certification - OOL SWITCH
 </pre>
 <a name="41aa053a730cd3a8949410c96489828f">meter: 01_DROP_01_PKTPS_02_10000</a>
 <pre>
-..........
+.........
     20000pktps(ethernet/ipv4/tcp)-->'in_port=1,actions=meter:10000pktps(drop),output:2'                  OK
 ..........
     20000pktps(ethernet/ipv6/tcp)-->'in_port=1,actions=meter:10000pktps(drop),output:2'                  OK
@@ -1675,14 +1675,12 @@ title: Ryu Certification - OOL SWITCH
 <a name="c915561eabc278589470d2187cb110f2">meter: 02_DSCP_REMARK_00_KBPS_02_100M</a>
 <pre>
 ..........
-    200Mbps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 84292.44kbps
-..........
-    200Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 84580.26kbps
+    200Mbps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' OK
 .........
-    200Mbps(ethernet/arp)-->'in_port=1,actions=meter:200Mbps(dscp_remark:prec_level=1),output:2'         ERROR
-        Received unexpected throughput: {'in_port': 2} 167279.93kbps
+    200Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 82150.00kbps
+..........
+    200Mbps(ethernet/arp)-->'in_port=1,actions=meter:200Mbps(dscp_remark:prec_level=1),output:2'         OK
 </pre>
 <a name="50fc5b625263a400208fee338d37d088">meter: 02_DSCP_REMARK_01_PKTPS_00_100</a>
 <pre>
@@ -1706,10 +1704,10 @@ title: Ryu Certification - OOL SWITCH
 <pre>
 ..........
     20000pktps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 8249.12pktps
+        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 8626.41pktps
 ..........
     20000pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 8160.19pktps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 8555.36pktps
 ..........
     20000pktps(ethernet/arp)-->'in_port=1,actions=meter:20000pktps(dscp_remark:prec_level=1),output:2'   OK
 </pre>
