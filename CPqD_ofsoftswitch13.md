@@ -11,19 +11,19 @@ title: Ryu Certification - CPqD ofsoftswitch13
 |[Action](#Action)|59|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(56)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|[set_field](#set_field)|156|14|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(156)|&nbsp;&nbsp;&nbsp;&nbsp;(14)|
-|[Match](#Match)|672|42|
+|[set_field](#set_field)|162|8|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(162)|&nbsp;&nbsp;&nbsp;&nbsp;(8)|
+|[Match](#Match)|714|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(108)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(564)|&nbsp;&nbsp;&nbsp;&nbsp;(42)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(606)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |[Group](#Group)|15|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(12)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|[Meter](#Meter)|26|10|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(26)|&nbsp;&nbsp;&nbsp;&nbsp;(10)|
-|Total|928|66|
+|[Meter](#Meter)|30|6|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(30)|&nbsp;&nbsp;&nbsp;&nbsp;(6)|
+|Total|980|14|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(114)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(814)|&nbsp;&nbsp;&nbsp;&nbsp;(66)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(866)|&nbsp;&nbsp;&nbsp;&nbsp;(14)|
 
 ## <a name ='Action'>Action</a>
 
@@ -61,11 +61,11 @@ title: Ryu Certification - CPqD ofsoftswitch13
 |[ETH_TYPE](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/05_ETH_TYPE.json)|- | [OK](#ba60e9bfb8e4d339de7040f0f5e3d0c2) | [OK](#ba60e9bfb8e4d339de7040f0f5e3d0c2) | [OK](#ba60e9bfb8e4d339de7040f0f5e3d0c2) |
 |[TUNNEL_ID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/38_TUNNEL_ID.json)|- | [OK](#21b7587a754c08356f3f60d3b4bb8a99) | [OK](#21b7587a754c08356f3f60d3b4bb8a99) | [OK](#21b7587a754c08356f3f60d3b4bb8a99) |
 |[VLAN_VID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/06_VLAN_VID.json)|- | [OK](#cbb7ad4ba4f1c1f3dabc03ae2f07c663) | [OK](#cbb7ad4ba4f1c1f3dabc03ae2f07c663) | [OK](#cbb7ad4ba4f1c1f3dabc03ae2f07c663) |
-|[VLAN_PCP](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/07_VLAN_PCP.json)|- | [ERROR](#4aac2024fdbed94a15211163ccb7b2d0) | [ERROR](#4aac2024fdbed94a15211163ccb7b2d0) | [ERROR](#4aac2024fdbed94a15211163ccb7b2d0) |
+|[VLAN_PCP](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/07_VLAN_PCP.json)|- | [OK](#4aac2024fdbed94a15211163ccb7b2d0) | [OK](#4aac2024fdbed94a15211163ccb7b2d0) | [OK](#4aac2024fdbed94a15211163ccb7b2d0) |
 |[MPLS_LABEL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/34_MPLS_LABEL.json)|- | [OK](#206060d03aae06223b957a9540c9bfe4) | [OK](#206060d03aae06223b957a9540c9bfe4) | [OK](#206060d03aae06223b957a9540c9bfe4) |
 |[MPLS_TC](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/35_MPLS_TC.json)|- | [OK](#a5dc6ce9e4c50889a73b16c89210662e) | [OK](#a5dc6ce9e4c50889a73b16c89210662e) | [OK](#a5dc6ce9e4c50889a73b16c89210662e) |
 |[MPLS_BOS](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/36_MPLS_BOS.json)|- | [OK](#31c5b339b919852ded458ea547ef8696) | [OK](#31c5b339b919852ded458ea547ef8696) | [OK](#31c5b339b919852ded458ea547ef8696) |
-|[PBB_ISID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/37_PBB_ISID.json)|- | [ERROR](#9e9826295e4fcce4158b54ff2f2ce35d) | [ERROR](#9e9826295e4fcce4158b54ff2f2ce35d) | [ERROR](#9e9826295e4fcce4158b54ff2f2ce35d) |
+|[PBB_ISID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/37_PBB_ISID.json)|- | [OK](#9e9826295e4fcce4158b54ff2f2ce35d) | [OK](#9e9826295e4fcce4158b54ff2f2ce35d) | [OK](#9e9826295e4fcce4158b54ff2f2ce35d) |
 
 | |Required|ether|vlan|mpls|pbb|
 |-----------|----|----|----|----|----|
@@ -120,18 +120,18 @@ title: Ryu Certification - CPqD ofsoftswitch13
 |[TUNNEL_ID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/38_TUNNEL_ID.json)|- | [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) / [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) / [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) | [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) / [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) / [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) | [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) / [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) / [OK](#e1ab734d1d27b48a8e3b37e574a0a68c) |
 |[TUNNEL_ID (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/38_TUNNEL_ID_Mask.json)|- | [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) / [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) / [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) | [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) / [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) / [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) | [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) / [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) / [OK](#8a0ae32e2588fe37ce98c87f0c1d55ec) |
 |[VLAN_VID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/06_VLAN_VID.json)|- | [OK](#6cb722939537192104e3dbc2bc225b9a) / [OK](#6cb722939537192104e3dbc2bc225b9a) / [OK](#6cb722939537192104e3dbc2bc225b9a) | [OK](#6cb722939537192104e3dbc2bc225b9a) / [OK](#6cb722939537192104e3dbc2bc225b9a) / [OK](#6cb722939537192104e3dbc2bc225b9a) | [OK](#6cb722939537192104e3dbc2bc225b9a) / [OK](#6cb722939537192104e3dbc2bc225b9a) / [OK](#6cb722939537192104e3dbc2bc225b9a) |
-|[VLAN_VID (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/06_VLAN_VID_Mask.json)|- | [ERROR](#f984e51f48e954737fa86b294c96fdd0) / [ERROR](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) | [ERROR](#f984e51f48e954737fa86b294c96fdd0) / [ERROR](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) | [ERROR](#f984e51f48e954737fa86b294c96fdd0) / [ERROR](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) |
-|[VLAN_PCP](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/07_VLAN_PCP.json)|- | [ERROR](#1a4fe62fff1c9f89eb8ff9a3192add56) / [ERROR](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) | [ERROR](#1a4fe62fff1c9f89eb8ff9a3192add56) / [ERROR](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) | [ERROR](#1a4fe62fff1c9f89eb8ff9a3192add56) / [ERROR](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) |
+|[VLAN_VID (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/06_VLAN_VID_Mask.json)|- | [OK](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) | [OK](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) | [OK](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) / [OK](#f984e51f48e954737fa86b294c96fdd0) |
+|[VLAN_PCP](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/07_VLAN_PCP.json)|- | [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) | [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) | [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) / [OK](#1a4fe62fff1c9f89eb8ff9a3192add56) |
 |[MPLS_LABEL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/34_MPLS_LABEL.json)|- | [OK](#c1cf14c00edeb647eb396c65bac9b6b9) / [OK](#c1cf14c00edeb647eb396c65bac9b6b9) / [OK](#c1cf14c00edeb647eb396c65bac9b6b9) | [OK](#c1cf14c00edeb647eb396c65bac9b6b9) / [OK](#c1cf14c00edeb647eb396c65bac9b6b9) / [OK](#c1cf14c00edeb647eb396c65bac9b6b9) | [OK](#c1cf14c00edeb647eb396c65bac9b6b9) / [OK](#c1cf14c00edeb647eb396c65bac9b6b9) / [OK](#c1cf14c00edeb647eb396c65bac9b6b9) |
 |[MPLS_TC](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/35_MPLS_TC.json)|- | [OK](#f3ff641757553b6eda3a52ade54d5e7d) / [OK](#f3ff641757553b6eda3a52ade54d5e7d) / [OK](#f3ff641757553b6eda3a52ade54d5e7d) | [OK](#f3ff641757553b6eda3a52ade54d5e7d) / [OK](#f3ff641757553b6eda3a52ade54d5e7d) / [OK](#f3ff641757553b6eda3a52ade54d5e7d) | [OK](#f3ff641757553b6eda3a52ade54d5e7d) / [OK](#f3ff641757553b6eda3a52ade54d5e7d) / [OK](#f3ff641757553b6eda3a52ade54d5e7d) |
 |[MPLS_BOS](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/36_MPLS_BOS.json)|- | [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) / [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) / [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) | [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) / [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) / [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) | [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) / [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) / [OK](#1aecdbcd4d391560791f6f9ae2cb56ad) |
-|[PBB_ISID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/37_PBB_ISID.json)|- | [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) / [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) / [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) | [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) / [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) / [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) | [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) / [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) / [ERROR](#42d8b469a2a3868f8fb4a5059ad451ff) |
-|[PBB_ISID (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/37_PBB_ISID_Mask.json)|- | [ERROR](#a0f136634ba501a112c0bb437349a478) / [ERROR](#a0f136634ba501a112c0bb437349a478) / [ERROR](#a0f136634ba501a112c0bb437349a478) | [ERROR](#a0f136634ba501a112c0bb437349a478) / [ERROR](#a0f136634ba501a112c0bb437349a478) / [ERROR](#a0f136634ba501a112c0bb437349a478) | [ERROR](#a0f136634ba501a112c0bb437349a478) / [ERROR](#a0f136634ba501a112c0bb437349a478) / [ERROR](#a0f136634ba501a112c0bb437349a478) |
+|[PBB_ISID](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/37_PBB_ISID.json)|- | [OK](#42d8b469a2a3868f8fb4a5059ad451ff) / [OK](#42d8b469a2a3868f8fb4a5059ad451ff) / [OK](#42d8b469a2a3868f8fb4a5059ad451ff) | [OK](#42d8b469a2a3868f8fb4a5059ad451ff) / [OK](#42d8b469a2a3868f8fb4a5059ad451ff) / [OK](#42d8b469a2a3868f8fb4a5059ad451ff) | [OK](#42d8b469a2a3868f8fb4a5059ad451ff) / [OK](#42d8b469a2a3868f8fb4a5059ad451ff) / [OK](#42d8b469a2a3868f8fb4a5059ad451ff) |
+|[PBB_ISID (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/37_PBB_ISID_Mask.json)|- | [OK](#a0f136634ba501a112c0bb437349a478) / [OK](#a0f136634ba501a112c0bb437349a478) / [OK](#a0f136634ba501a112c0bb437349a478) | [OK](#a0f136634ba501a112c0bb437349a478) / [OK](#a0f136634ba501a112c0bb437349a478) / [OK](#a0f136634ba501a112c0bb437349a478) | [OK](#a0f136634ba501a112c0bb437349a478) / [OK](#a0f136634ba501a112c0bb437349a478) / [OK](#a0f136634ba501a112c0bb437349a478) |
 
 | |Required|ether|vlan|mpls|pbb|
 |-----------|----|----|----|----|----|
 |[IP_DSCP (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/08_IP_DSCP_IPv4.json)|- | [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) | [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) | [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) | [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) / [OK](#0445f4506456f0406f5f718b15173da7) |
-|[IP_ECN (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/09_IP_ECN_IPv4.json)|- | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [ERROR](#ccd612d79452abeda8e01ec1ae8e41b0) | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [ERROR](#ccd612d79452abeda8e01ec1ae8e41b0) | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [ERROR](#ccd612d79452abeda8e01ec1ae8e41b0) | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [ERROR](#ccd612d79452abeda8e01ec1ae8e41b0) |
+|[IP_ECN (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/09_IP_ECN_IPv4.json)|- | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) | [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) / [OK](#ccd612d79452abeda8e01ec1ae8e41b0) |
 |[IP_PROTO (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/10_IP_PROTO_IPv4.json)|x | [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) | [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) | [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) | [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) / [OK](#f3327379b91290e99b0e2dccd289d8e0) |
 |[IPV4_SRC](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/11_IPV4_SRC.json)|x | [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) | [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) | [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) | [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) / [OK](#100366c2f43f886128d669052f8fe25a) |
 |[IPV4_SRC (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/11_IPV4_SRC_Mask.json)|x | [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) | [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) | [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) | [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) |
@@ -159,7 +159,7 @@ title: Ryu Certification - CPqD ofsoftswitch13
 |[IPV6_DST](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/27_IPV6_DST.json)|x | [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) | [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) | [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) | [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) / [OK](#5f6f38ef2d6379737bbbbfbe7485849f) |
 |[IPV6_DST (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/27_IPV6_DST_Mask.json)|x | [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) | [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) | [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) | [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) / [OK](#c665e95a0a2e29b356d008fbae1c9a6a) |
 |[IPV6_FLABEL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/28_IPV6_FLABEL.json)|- | [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) | [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) | [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) | [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) / [OK](#4d0f792bc907702cfb20f47709320f71) |
-|[IPV6_FLABEL (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/28_IPV6_FLABEL_Mask.json)|- | [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) | [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) | [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) | [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [ERROR](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) |
+|[IPV6_FLABEL (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/28_IPV6_FLABEL_Mask.json)|- | [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) | [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) | [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) | [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) / [OK](#310fca49f5f48423d70d71be9df80b5f) |
 |[ICMPV6_TYPE](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/29_ICMPV6_TYPE.json)|- | [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) | [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) | [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) | [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) / [OK](#cdd8e795bba586eaa11e89ba972af7a5) |
 |[ICMPV6_CODE](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/30_ICMPV6_CODE.json)|- | [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) | [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) | [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) | [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) / [OK](#f2b820c0dbea85f4c95a2e83379c54fa) |
 |[IPV6_ND_TARGET](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/31_IPV6_ND_TARGET.json)|- | [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) | [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) | [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) | [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) / [OK](#927147b096027f4e78f58e0672cdb6e3) |
@@ -197,11 +197,11 @@ title: Ryu Certification - CPqD ofsoftswitch13
 |[DROP_01_PKTPS_00_100](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/01_DROP_01_PKTPS_00_100.json)|- | [OK](#492d526b9df30e66fa495c155a7bc957) | [OK](#492d526b9df30e66fa495c155a7bc957) | [OK](#492d526b9df30e66fa495c155a7bc957) |
 |[DROP_01_PKTPS_01_1000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/01_DROP_01_PKTPS_01_1000.json)|- | [OK](#2e4331e147a562542585036dcf5c507a) | [OK](#2e4331e147a562542585036dcf5c507a) | [OK](#2e4331e147a562542585036dcf5c507a) |
 |[DROP_01_PKTPS_02_10000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/01_DROP_01_PKTPS_02_10000.json)|- | [OK](#41aa053a730cd3a8949410c96489828f) | [OK](#41aa053a730cd3a8949410c96489828f) | [OK](#41aa053a730cd3a8949410c96489828f) |
-|[DSCP_REMARK_00_KBPS_00_1M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_00_1M.json)|- | [OK](#b5ce2897cf7d803b22135f5fd7421b38) | [ERROR](#b5ce2897cf7d803b22135f5fd7421b38) | [OK](#b5ce2897cf7d803b22135f5fd7421b38) |
-|[DSCP_REMARK_00_KBPS_01_10M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_01_10M.json)|- | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) | [ERROR](#5c4346f7b1d133f7f2d99dd68612fd98) | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) |
+|[DSCP_REMARK_00_KBPS_00_1M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_00_1M.json)|- | [OK](#b5ce2897cf7d803b22135f5fd7421b38) | [OK](#b5ce2897cf7d803b22135f5fd7421b38) | [OK](#b5ce2897cf7d803b22135f5fd7421b38) |
+|[DSCP_REMARK_00_KBPS_01_10M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_01_10M.json)|- | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) | [OK](#5c4346f7b1d133f7f2d99dd68612fd98) |
 |[DSCP_REMARK_00_KBPS_02_100M](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_00_KBPS_02_100M.json)|- | [ERROR](#c915561eabc278589470d2187cb110f2) | [ERROR](#c915561eabc278589470d2187cb110f2) | [ERROR](#c915561eabc278589470d2187cb110f2) |
-|[DSCP_REMARK_01_PKTPS_00_100](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_00_100.json)|- | [OK](#50fc5b625263a400208fee338d37d088) | [ERROR](#50fc5b625263a400208fee338d37d088) | [OK](#50fc5b625263a400208fee338d37d088) |
-|[DSCP_REMARK_01_PKTPS_01_1000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_01_1000.json)|- | [OK](#a90e19ea457ae862fc5292fca16226bb) | [ERROR](#a90e19ea457ae862fc5292fca16226bb) | [OK](#a90e19ea457ae862fc5292fca16226bb) |
+|[DSCP_REMARK_01_PKTPS_00_100](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_00_100.json)|- | [OK](#50fc5b625263a400208fee338d37d088) | [OK](#50fc5b625263a400208fee338d37d088) | [OK](#50fc5b625263a400208fee338d37d088) |
+|[DSCP_REMARK_01_PKTPS_01_1000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_01_1000.json)|- | [OK](#a90e19ea457ae862fc5292fca16226bb) | [OK](#a90e19ea457ae862fc5292fca16226bb) | [OK](#a90e19ea457ae862fc5292fca16226bb) |
 |[DSCP_REMARK_01_PKTPS_02_10000](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/meter/02_DSCP_REMARK_01_PKTPS_02_10000.json)|- | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [ERROR](#638dd569a77001f62f3f1f9f267daea8) | [ERROR](#638dd569a77001f62f3f1f9f267daea8) |
 
 ## Detailed log
@@ -353,12 +353,9 @@ title: Ryu Certification - CPqD ofsoftswitch13
 </pre>
 <a name="4aac2024fdbed94a15211163ccb7b2d0">action: set_field: 07_VLAN_PCP</a>
 <pre>
-    ethernet/vlan(pcp=3)/ipv4/tcp-->'vlan_pcp=3,actions=set_field:5->vlan_pcp,output:2'                  ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(pcp=3)/ipv6/tcp-->'vlan_pcp=3,actions=set_field:5->vlan_pcp,output:2'                  ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(pcp=3)/arp-->'vlan_pcp=3,actions=set_field:5->vlan_pcp,output:2'                       ERROR
-        Receiving timeout: no change in tx_packets on target.
+    ethernet/vlan(pcp=3)/ipv4/tcp-->'vlan_pcp=3,actions=set_field:5->vlan_pcp,output:2'                  OK
+    ethernet/vlan(pcp=3)/ipv6/tcp-->'vlan_pcp=3,actions=set_field:5->vlan_pcp,output:2'                  OK
+    ethernet/vlan(pcp=3)/arp-->'vlan_pcp=3,actions=set_field:5->vlan_pcp,output:2'                       OK
 </pre>
 <a name="206060d03aae06223b957a9540c9bfe4">action: set_field: 34_MPLS_LABEL</a>
 <pre>
@@ -380,12 +377,9 @@ title: Ryu Certification - CPqD ofsoftswitch13
 </pre>
 <a name="9e9826295e4fcce4158b54ff2f2ce35d">action: set_field: 37_PBB_ISID</a>
 <pre>
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_itag=100,actions=set_field:203->pbb_itag,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_itag=100,actions=set_field:203->pbb_itag,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_itag=100,actions=set_field:203->pbb_itag,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_itag=100,actions=set_field:203->pbb_itag,output:2' OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_itag=100,actions=set_field:203->pbb_itag,output:2' OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_itag=100,actions=set_field:203->pbb_itag,output:2' OK
 </pre>
 <a name="ce97749e537c30572fe41bc5f97f525c">action: set_field: 08_IP_DSCP (IPv4)</a>
 <pre>
@@ -774,38 +768,26 @@ title: Ryu Certification - CPqD ofsoftswitch13
 </pre>
 <a name="f984e51f48e954737fa86b294c96fdd0">match: 06_VLAN_VID (Mask)</a>
 <pre>
-    ethernet/vlan(vid=100)/ipv4/tcp-->'vlan_vid=96(mask=0xf0),actions=output:2'                          ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(vid=100)/ipv4/tcp-->'vlan_vid=96(mask=0xf0),actions=output:CONTROLLER'                 ERROR
-        Receiving timeout: no packet-in.
+    ethernet/vlan(vid=100)/ipv4/tcp-->'vlan_vid=96(mask=0xf0),actions=output:2'                          OK
+    ethernet/vlan(vid=100)/ipv4/tcp-->'vlan_vid=96(mask=0xf0),actions=output:CONTROLLER'                 OK
     ethernet/vlan(vid=203)/ipv4/tcp-->'vlan_vid=96(mask=0xf0),actions=output:2'                          OK
-    ethernet/vlan(vid=100)/ipv6/tcp-->'vlan_vid=96(mask=0xf0),actions=output:2'                          ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(vid=100)/ipv6/tcp-->'vlan_vid=96(mask=0xf0),actions=output:CONTROLLER'                 ERROR
-        Receiving timeout: no packet-in.
+    ethernet/vlan(vid=100)/ipv6/tcp-->'vlan_vid=96(mask=0xf0),actions=output:2'                          OK
+    ethernet/vlan(vid=100)/ipv6/tcp-->'vlan_vid=96(mask=0xf0),actions=output:CONTROLLER'                 OK
     ethernet/vlan(vid=203)/ipv6/tcp-->'vlan_vid=96(mask=0xf0),actions=output:2'                          OK
-    ethernet/vlan(vid=100)/arp-->'vlan_vid=96(mask=0xf0),actions=output:2'                               ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(vid=100)/arp-->'vlan_vid=96(mask=0xf0),actions=output:CONTROLLER'                      ERROR
-        Receiving timeout: no packet-in.
+    ethernet/vlan(vid=100)/arp-->'vlan_vid=96(mask=0xf0),actions=output:2'                               OK
+    ethernet/vlan(vid=100)/arp-->'vlan_vid=96(mask=0xf0),actions=output:CONTROLLER'                      OK
     ethernet/vlan(vid=203)/arp-->'vlan_vid=96(mask=0xf0),actions=output:2'                               OK
 </pre>
 <a name="1a4fe62fff1c9f89eb8ff9a3192add56">match: 07_VLAN_PCP</a>
 <pre>
-    ethernet/vlan(pcp=3)/ipv4/tcp-->'vlan_pcp=3,actions=output:2'                                        ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(pcp=3)/ipv4/tcp-->'vlan_pcp=3,actions=output:CONTROLLER'                               ERROR
-        Receiving timeout: no packet-in.
+    ethernet/vlan(pcp=3)/ipv4/tcp-->'vlan_pcp=3,actions=output:2'                                        OK
+    ethernet/vlan(pcp=3)/ipv4/tcp-->'vlan_pcp=3,actions=output:CONTROLLER'                               OK
     ethernet/vlan(pcp=5)/ipv4/tcp-->'vlan_pcp=3,actions=output:2'                                        OK
-    ethernet/vlan(pcp=3)/ipv6/tcp-->'vlan_pcp=3,actions=output:2'                                        ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(pcp=3)/ipv6/tcp-->'vlan_pcp=3,actions=output:CONTROLLER'                               ERROR
-        Receiving timeout: no packet-in.
+    ethernet/vlan(pcp=3)/ipv6/tcp-->'vlan_pcp=3,actions=output:2'                                        OK
+    ethernet/vlan(pcp=3)/ipv6/tcp-->'vlan_pcp=3,actions=output:CONTROLLER'                               OK
     ethernet/vlan(pcp=5)/ipv6/tcp-->'vlan_pcp=3,actions=output:2'                                        OK
-    ethernet/vlan(pcp=3)/arp-->'vlan_pcp=3,actions=output:2'                                             ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan(pcp=3)/arp-->'vlan_pcp=3,actions=output:CONTROLLER'                                    ERROR
-        Receiving timeout: no packet-in.
+    ethernet/vlan(pcp=3)/arp-->'vlan_pcp=3,actions=output:2'                                             OK
+    ethernet/vlan(pcp=3)/arp-->'vlan_pcp=3,actions=output:CONTROLLER'                                    OK
     ethernet/vlan(pcp=5)/arp-->'vlan_pcp=3,actions=output:2'                                             OK
 </pre>
 <a name="c1cf14c00edeb647eb396c65bac9b6b9">match: 34_MPLS_LABEL</a>
@@ -846,45 +828,27 @@ title: Ryu Certification - CPqD ofsoftswitch13
 </pre>
 <a name="42d8b469a2a3868f8fb4a5059ad451ff">match: 37_PBB_ISID</a>
 <pre>
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=100,actions=output:2'          ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=100,actions=output:CONTROLLER' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=100,actions=output:2'          ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=100,actions=output:2'          ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=100,actions=output:CONTROLLER' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=100,actions=output:2'          ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=100,actions=output:2'               ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=100,actions=output:CONTROLLER'      ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/arp-->'pbb_isid=100,actions=output:2'               ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=100,actions=output:2'          OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=100,actions=output:CONTROLLER' OK
+    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=100,actions=output:2'          OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=100,actions=output:2'          OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=100,actions=output:CONTROLLER' OK
+    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=100,actions=output:2'          OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=100,actions=output:2'               OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=100,actions=output:CONTROLLER'      OK
+    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/arp-->'pbb_isid=100,actions=output:2'               OK
 </pre>
 <a name="a0f136634ba501a112c0bb437349a478">match: 37_PBB_ISID (Mask)</a>
 <pre>
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=96(mask=0xf0),actions=output:CONTROLLER' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=96(mask=0xf0),actions=output:CONTROLLER' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=96(mask=0xf0),actions=output:2'     ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=96(mask=0xf0),actions=output:CONTROLLER' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
-    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/arp-->'pbb_isid=96(mask=0xf0),actions=output:2'     ERROR
-        Failed to add flows: OFPErrorMsg[type=0x04, code=0x06]
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=96(mask=0xf0),actions=output:CONTROLLER' OK
+    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv4/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=96(mask=0xf0),actions=output:CONTROLLER' OK
+    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/ipv6/tcp-->'pbb_isid=96(mask=0xf0),actions=output:2' OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=96(mask=0xf0),actions=output:2'     OK
+    ethernet/svlan/itag(sid=100)/ethernet/svlan/vlan/arp-->'pbb_isid=96(mask=0xf0),actions=output:CONTROLLER' OK
+    ethernet/svlan/itag(sid=203)/ethernet/svlan/vlan/arp-->'pbb_isid=96(mask=0xf0),actions=output:2'     OK
 </pre>
 <a name="0445f4506456f0406f5f718b15173da7">match: 08_IP_DSCP (IPv4)</a>
 <pre>
@@ -905,20 +869,16 @@ title: Ryu Certification - CPqD ofsoftswitch13
 <pre>
     ethernet/ipv4(tos=32)/tcp-->'ip_ecn=0,actions=output:2'                                              OK
     ethernet/ipv4(tos=32)/tcp-->'ip_ecn=0,actions=output:CONTROLLER'                                     OK
-    ethernet/ipv4(tos=65)/tcp-->'ip_ecn=0,actions=output:2'                                              ERROR
-        Table-miss error: increment in matched_count.
+    ethernet/ipv4(tos=65)/tcp-->'ip_ecn=0,actions=output:2'                                              OK
     ethernet/vlan/ipv4(tos=32)/tcp-->'ip_ecn=0,actions=output:2'                                         OK
     ethernet/vlan/ipv4(tos=32)/tcp-->'ip_ecn=0,actions=output:CONTROLLER'                                OK
-    ethernet/vlan/ipv4(tos=65)/tcp-->'ip_ecn=0,actions=output:2'                                         ERROR
-        Table-miss error: increment in matched_count.
+    ethernet/vlan/ipv4(tos=65)/tcp-->'ip_ecn=0,actions=output:2'                                         OK
     ethernet/mpls/ipv4(tos=32)/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ip_ecn=0,actions=output:2' OK
     ethernet/mpls/ipv4(tos=32)/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ip_ecn=0,actions=output:CONTROLLER' OK
-    ethernet/mpls/ipv4(tos=65)/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ip_ecn=0,actions=output:2' ERROR
-        Table-miss error: increment in matched_count.
+    ethernet/mpls/ipv4(tos=65)/tcp-->'actions=pop_mpls:0x0800,goto_table:1','table_id:1,ip_ecn=0,actions=output:2' OK
     ethernet/itag/ethernet/ipv4(tos=32)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ip_ecn=0,actions=output:2' OK
     ethernet/itag/ethernet/ipv4(tos=32)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ip_ecn=0,actions=output:CONTROLLER' OK
-    ethernet/itag/ethernet/ipv4(tos=65)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ip_ecn=0,actions=output:2' ERROR
-        Table-miss error: increment in matched_count.
+    ethernet/itag/ethernet/ipv4(tos=65)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ip_ecn=0,actions=output:2' OK
 </pre>
 <a name="f3327379b91290e99b0e2dccd289d8e0">match: 10_IP_PROTO (IPv4)</a>
 <pre>
@@ -1327,25 +1287,17 @@ title: Ryu Certification - CPqD ofsoftswitch13
 </pre>
 <a name="310fca49f5f48423d70d71be9df80b5f">match: 28_IPV6_FLABEL (Mask)</a>
 <pre>
-    ethernet/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:2'               ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER'      ERROR
-        Receiving timeout: no packet-in.
+    ethernet/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:2'               OK
+    ethernet/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER'      OK
     ethernet/ipv6(flow_label=203)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:2'               OK
-    ethernet/vlan/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:2'          ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/vlan/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER' ERROR
-        Receiving timeout: no packet-in.
+    ethernet/vlan/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:2'          OK
+    ethernet/vlan/ipv6(flow_label=100)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER' OK
     ethernet/vlan/ipv6(flow_label=203)/tcp-->'ipv6_flabel=96(mask=0x000ffff0),actions=output:2'          OK
-    ethernet/mpls/ipv6(flow_label=100)/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/mpls/ipv6(flow_label=100)/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER' ERROR
-        Receiving timeout: no packet-in.
+    ethernet/mpls/ipv6(flow_label=100)/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:2' OK
+    ethernet/mpls/ipv6(flow_label=100)/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER' OK
     ethernet/mpls/ipv6(flow_label=203)/tcp-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:2' OK
-    ethernet/itag/ethernet/ipv6(flow_label=100)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:2' ERROR
-        Receiving timeout: no change in tx_packets on target.
-    ethernet/itag/ethernet/ipv6(flow_label=100)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER' ERROR
-        Receiving timeout: no packet-in.
+    ethernet/itag/ethernet/ipv6(flow_label=100)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:2' OK
+    ethernet/itag/ethernet/ipv6(flow_label=100)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:CONTROLLER' OK
     ethernet/itag/ethernet/ipv6(flow_label=203)/tcp-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_flabel=96(mask=0x000ffff0),actions=output:2' OK
 </pre>
 <a name="cdd8e795bba586eaa11e89ba972af7a5">match: 29_ICMPV6_TYPE</a>
@@ -1692,8 +1644,7 @@ title: Ryu Certification - CPqD ofsoftswitch13
 ..........
     2Mbps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:1Mbps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
-    2Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:1Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 2033.88kbps
+    2Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:1Mbps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
     2Mbps(ethernet/arp)-->'in_port=1,actions=meter:2Mbps(dscp_remark:prec_level=1),output:2'             OK
 </pre>
@@ -1702,8 +1653,7 @@ title: Ryu Certification - CPqD ofsoftswitch13
 ..........
     20Mbps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:10Mbps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
-    20Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:10Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 20286.53kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps
+    20Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:10Mbps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
     20Mbps(ethernet/arp)-->'in_port=1,actions=meter:20Mbps(dscp_remark:prec_level=1),output:2'           OK
 </pre>
@@ -1711,21 +1661,20 @@ title: Ryu Certification - CPqD ofsoftswitch13
 <pre>
 ..........
     200Mbps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 69100.26kbps
+        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 10590.37kbps
 ..........
     200Mbps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100Mbps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00kbps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 172011.70kbps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 10659.31kbps
 ..........
     200Mbps(ethernet/arp)-->'in_port=1,actions=meter:200Mbps(dscp_remark:prec_level=1),output:2'         ERROR
-        Received unexpected throughput: {'in_port': 2} 164155.61kbps
+        Received unexpected throughput: {'in_port': 2} 128348.30kbps
 </pre>
 <a name="50fc5b625263a400208fee338d37d088">meter: 02_DSCP_REMARK_01_PKTPS_00_100</a>
 <pre>
 ..........
     200pktps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:100pktps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
-    200pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 198.52pktps
+    200pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:100pktps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
     200pktps(ethernet/arp)-->'in_port=1,actions=meter:200pktps(dscp_remark:prec_level=1),output:2'       OK
 </pre>
@@ -1734,8 +1683,7 @@ title: Ryu Certification - CPqD ofsoftswitch13
 ..........
     2000pktps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:1000pktps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
-    2000pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:1000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 1980.08pktps
+    2000pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:1000pktps(dscp_remark:ip_dscp=20),output:2' OK
 ..........
     2000pktps(ethernet/arp)-->'in_port=1,actions=meter:2000pktps(dscp_remark:prec_level=1),output:2'     OK
 </pre>
@@ -1743,11 +1691,11 @@ title: Ryu Certification - CPqD ofsoftswitch13
 <pre>
 ..........
     20000pktps(ethernet/ipv4(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 3311.15pktps
+        Received unexpected throughput: {'eth_type': 2048, 'in_port': 2, 'ip_dscp': 20} 46.57pktps
 ..........
     20000pktps(ethernet/ipv6(dscp=18)/tcp)-->'in_port=1,actions=meter:10000pktps(dscp_remark:ip_dscp=20),output:2' ERROR
-        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 0.00pktps, {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 18} 15260.05pktps
+        Received unexpected throughput: {'eth_type': 34525, 'in_port': 2, 'ip_dscp': 20} 45.16pktps
 ..........
     20000pktps(ethernet/arp)-->'in_port=1,actions=meter:20000pktps(dscp_remark:prec_level=1),output:2'   ERROR
-        Received unexpected throughput: {'in_port': 2} 15750.72pktps
+        Received unexpected throughput: {'in_port': 2} 10497.16pktps
 </pre>
