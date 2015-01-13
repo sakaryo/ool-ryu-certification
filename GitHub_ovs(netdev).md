@@ -13,16 +13,16 @@ title: Ryu Certification - GitHub ovs(netdev)
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(34)|&nbsp;&nbsp;&nbsp;&nbsp;(22)|
 |[set_field](#set_field)|90|80|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(90)|&nbsp;&nbsp;&nbsp;&nbsp;(80)|
-|[Match](#Match)|467|247|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(93)|&nbsp;&nbsp;&nbsp;&nbsp;(15)|
+|[Match](#Match)|466|248|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(92)|&nbsp;&nbsp;&nbsp;&nbsp;(16)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(374)|&nbsp;&nbsp;&nbsp;&nbsp;(232)|
 |[Group](#Group)|8|7|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(5)|&nbsp;&nbsp;&nbsp;&nbsp;(7)|
 |[Meter](#Meter)|0|36|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|&nbsp;&nbsp;&nbsp;&nbsp;(36)|
-|Total|602|392|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(99)|&nbsp;&nbsp;&nbsp;&nbsp;(15)|
+|Total|601|393|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(98)|&nbsp;&nbsp;&nbsp;&nbsp;(16)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(503)|&nbsp;&nbsp;&nbsp;&nbsp;(377)|
 
 ## <a name ='Action'>Action</a>
@@ -137,7 +137,7 @@ title: Ryu Certification - GitHub ovs(netdev)
 |[IPV4_SRC (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/11_IPV4_SRC_Mask.json)|x | [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [ERROR](#fd152ac5dc105cba865d2181e72ebbc9) | [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [ERROR](#fd152ac5dc105cba865d2181e72ebbc9) | [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) / [OK](#fd152ac5dc105cba865d2181e72ebbc9) | [ERROR](#fd152ac5dc105cba865d2181e72ebbc9) / [ERROR](#fd152ac5dc105cba865d2181e72ebbc9) / [ERROR](#fd152ac5dc105cba865d2181e72ebbc9) |
 |[IPV4_DST](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/12_IPV4_DST.json)|x | [OK](#fa9569007b6a7d5bfc410b623ba7c85b) / [OK](#fa9569007b6a7d5bfc410b623ba7c85b) / [ERROR](#fa9569007b6a7d5bfc410b623ba7c85b) | [OK](#fa9569007b6a7d5bfc410b623ba7c85b) / [OK](#fa9569007b6a7d5bfc410b623ba7c85b) / [ERROR](#fa9569007b6a7d5bfc410b623ba7c85b) | [OK](#fa9569007b6a7d5bfc410b623ba7c85b) / [OK](#fa9569007b6a7d5bfc410b623ba7c85b) / [OK](#fa9569007b6a7d5bfc410b623ba7c85b) | [ERROR](#fa9569007b6a7d5bfc410b623ba7c85b) / [ERROR](#fa9569007b6a7d5bfc410b623ba7c85b) / [ERROR](#fa9569007b6a7d5bfc410b623ba7c85b) |
 |[IPV4_DST (Mask)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/12_IPV4_DST_Mask.json)|x | [OK](#73178bbfef71338f9e1819ceaa7b2542) / [OK](#73178bbfef71338f9e1819ceaa7b2542) / [ERROR](#73178bbfef71338f9e1819ceaa7b2542) | [OK](#73178bbfef71338f9e1819ceaa7b2542) / [OK](#73178bbfef71338f9e1819ceaa7b2542) / [ERROR](#73178bbfef71338f9e1819ceaa7b2542) | [OK](#73178bbfef71338f9e1819ceaa7b2542) / [OK](#73178bbfef71338f9e1819ceaa7b2542) / [OK](#73178bbfef71338f9e1819ceaa7b2542) | [ERROR](#73178bbfef71338f9e1819ceaa7b2542) / [ERROR](#73178bbfef71338f9e1819ceaa7b2542) / [ERROR](#73178bbfef71338f9e1819ceaa7b2542) |
-|[TCP_SRC (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/13_TCP_SRC_IPv4.json)|x | [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) | [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) / [ERROR](#7b14766f93cc3b890182cbcc302a049d) | [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) | [ERROR](#7b14766f93cc3b890182cbcc302a049d) / [ERROR](#7b14766f93cc3b890182cbcc302a049d) / [ERROR](#7b14766f93cc3b890182cbcc302a049d) |
+|[TCP_SRC (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/13_TCP_SRC_IPv4.json)|x | [OK](#7b14766f93cc3b890182cbcc302a049d) / [ERROR](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) | [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) / [ERROR](#7b14766f93cc3b890182cbcc302a049d) | [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) / [OK](#7b14766f93cc3b890182cbcc302a049d) | [ERROR](#7b14766f93cc3b890182cbcc302a049d) / [ERROR](#7b14766f93cc3b890182cbcc302a049d) / [ERROR](#7b14766f93cc3b890182cbcc302a049d) |
 |[TCP_DST (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/14_TCP_DST_IPv4.json)|x | [OK](#ec3d8884918ea4b637ed7d07bb467161) / [OK](#ec3d8884918ea4b637ed7d07bb467161) / [OK](#ec3d8884918ea4b637ed7d07bb467161) | [OK](#ec3d8884918ea4b637ed7d07bb467161) / [OK](#ec3d8884918ea4b637ed7d07bb467161) / [ERROR](#ec3d8884918ea4b637ed7d07bb467161) | [OK](#ec3d8884918ea4b637ed7d07bb467161) / [OK](#ec3d8884918ea4b637ed7d07bb467161) / [OK](#ec3d8884918ea4b637ed7d07bb467161) | [ERROR](#ec3d8884918ea4b637ed7d07bb467161) / [ERROR](#ec3d8884918ea4b637ed7d07bb467161) / [ERROR](#ec3d8884918ea4b637ed7d07bb467161) |
 |[UDP_SRC (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/15_UDP_SRC_IPv4.json)|x | [OK](#2e57888f406e3b2903a4107cfd2b9919) / [OK](#2e57888f406e3b2903a4107cfd2b9919) / [OK](#2e57888f406e3b2903a4107cfd2b9919) | [OK](#2e57888f406e3b2903a4107cfd2b9919) / [OK](#2e57888f406e3b2903a4107cfd2b9919) / [ERROR](#2e57888f406e3b2903a4107cfd2b9919) | [OK](#2e57888f406e3b2903a4107cfd2b9919) / [OK](#2e57888f406e3b2903a4107cfd2b9919) / [OK](#2e57888f406e3b2903a4107cfd2b9919) | [ERROR](#2e57888f406e3b2903a4107cfd2b9919) / [ERROR](#2e57888f406e3b2903a4107cfd2b9919) / [ERROR](#2e57888f406e3b2903a4107cfd2b9919) |
 |[UDP_DST (IPv4)](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/match/16_UDP_DST_IPv4.json)|x | [OK](#ee030944f258a23b2c28535429a7d172) / [OK](#ee030944f258a23b2c28535429a7d172) / [OK](#ee030944f258a23b2c28535429a7d172) | [OK](#ee030944f258a23b2c28535429a7d172) / [OK](#ee030944f258a23b2c28535429a7d172) / [ERROR](#ee030944f258a23b2c28535429a7d172) | [OK](#ee030944f258a23b2c28535429a7d172) / [OK](#ee030944f258a23b2c28535429a7d172) / [OK](#ee030944f258a23b2c28535429a7d172) | [ERROR](#ee030944f258a23b2c28535429a7d172) / [ERROR](#ee030944f258a23b2c28535429a7d172) / [ERROR](#ee030944f258a23b2c28535429a7d172) |
@@ -1124,7 +1124,8 @@ title: Ryu Certification - GitHub ovs(netdev)
 <a name="7b14766f93cc3b890182cbcc302a049d">match: 13_TCP_SRC (IPv4)</a>
 <pre>
     ethernet/ipv4/tcp(src_port=11111)-->'tcp_src=11111,actions=output:2'                                 OK
-    ethernet/ipv4/tcp(src_port=11111)-->'tcp_src=11111,actions=output:CONTROLLER'                        OK
+    ethernet/ipv4/tcp(src_port=11111)-->'tcp_src=11111,actions=output:CONTROLLER'                        ERROR
+        Received incorrect packet-in: SW[dpid=0000000000000002]
     ethernet/ipv4/tcp(src_port=12345)-->'tcp_src=11111,actions=output:2'                                 OK
     ethernet/vlan/ipv4/tcp(src_port=11111)-->'tcp_src=11111,actions=output:2'                            OK
     ethernet/vlan/ipv4/tcp(src_port=11111)-->'tcp_src=11111,actions=output:CONTROLLER'                   OK
@@ -1907,31 +1908,31 @@ title: Ryu Certification - GitHub ovs(netdev)
     2Mbps(ethernet/ipv6(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' OK
 ..........
     2Mbps(ethernet/arp(src_ip=random,dst_ip=random)-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2036.25kbps
+        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2035.08kbps
 </pre>
 <a name="1677965b6b2cffd3c4d47b52b7629ca0">group: 01_SELECT_Weight_Ether</a>
 <pre>
 ..........
     2Mbps(ethernet(dst=random,src=random)/ipv4/tcp)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 531.62kbps, {'in_port': 3} 1492.91kbps
+        Received unexpected throughput: {'in_port': 2} 494.12kbps, {'in_port': 3} 1523.37kbps
 ..........
     2Mbps(ethernet(dst=random,src=random)/ipv6/tcp)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 508.56kbps, {'in_port': 3} 1514.73kbps
+        Received unexpected throughput: {'in_port': 2} 495.68kbps, {'in_port': 3} 1516.73kbps
 ..........
     2Mbps(ethernet(dst=random,src=random)/arp)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 508.96kbps, {'in_port': 3} 1513.20kbps
+        Received unexpected throughput: {'in_port': 2} 501.15kbps, {'in_port': 3} 1518.69kbps
 </pre>
 <a name="d52d0a95caf9ce38f77620354812c83c">group: 01_SELECT_Weight_IP</a>
 <pre>
 ..........
     2Mbps(ethernet/ipv4(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 515.20kbps, {'in_port': 3} 1519.44kbps
+        Received unexpected throughput: {'in_port': 2} 513.25kbps, {'in_port': 3} 1522.95kbps
 ..........
     2Mbps(ethernet/ipv6(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 477.32kbps, {'in_port': 3} 1551.49kbps
+        Received unexpected throughput: {'in_port': 2} 516.00kbps, {'in_port': 3} 1514.01kbps
 ..........
     2Mbps(ethernet/arp(src_ip=random,dst_ip=random)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2034.69kbps
+        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2035.09kbps
 </pre>
 <a name="9a2ce1d3a56a898592257439f05d22bf">meter: 01_DROP_00_KBPS_00_1M</a>
 <pre>
