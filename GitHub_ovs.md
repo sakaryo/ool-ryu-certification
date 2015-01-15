@@ -11,8 +11,8 @@ title: Ryu Certification - GitHub ovs
 |[Action](#Action)|37|22|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(3)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(34)|&nbsp;&nbsp;&nbsp;&nbsp;(22)|
-|[set_field](#set_field)|99|71|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(99)|&nbsp;&nbsp;&nbsp;&nbsp;(71)|
+|[set_field](#set_field)|108|62|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(108)|&nbsp;&nbsp;&nbsp;&nbsp;(62)|
 |[Match](#Match)|500|214|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(94)|&nbsp;&nbsp;&nbsp;&nbsp;(14)|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(406)|&nbsp;&nbsp;&nbsp;&nbsp;(200)|
@@ -21,9 +21,9 @@ title: Ryu Certification - GitHub ovs
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(5)|&nbsp;&nbsp;&nbsp;&nbsp;(7)|
 |[Meter](#Meter)|0|36|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(0)|&nbsp;&nbsp;&nbsp;&nbsp;(36)|
-|Total|644|350|
+|Total|653|341|
 |&nbsp;&nbsp;&nbsp;&nbsp;(Required)|&nbsp;&nbsp;&nbsp;&nbsp;(100)|&nbsp;&nbsp;&nbsp;&nbsp;(14)|
-|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(544)|&nbsp;&nbsp;&nbsp;&nbsp;(336)|
+|&nbsp;&nbsp;&nbsp;&nbsp;(Optional)|&nbsp;&nbsp;&nbsp;&nbsp;(553)|&nbsp;&nbsp;&nbsp;&nbsp;(327)|
 
 ## <a name ='Action'>Action</a>
 
@@ -96,9 +96,9 @@ title: Ryu Certification - GitHub ovs
 |[IPV6_FLABEL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/28_IPV6_FLABEL.json)|- | [OK](#b4b9abcf11b5c7f81971ea4e452ccfd6) | [OK](#b4b9abcf11b5c7f81971ea4e452ccfd6) | [OK](#b4b9abcf11b5c7f81971ea4e452ccfd6) | [ERROR](#b4b9abcf11b5c7f81971ea4e452ccfd6) |
 |[ICMPV6_TYPE](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/29_ICMPV6_TYPE.json)|- | [ERROR](#73a03bb41351355646920c1207233e73) | [ERROR](#73a03bb41351355646920c1207233e73) | [ERROR](#73a03bb41351355646920c1207233e73) | [ERROR](#73a03bb41351355646920c1207233e73) |
 |[ICMPV6_CODE](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/30_ICMPV6_CODE.json)|- | [ERROR](#c8cec92a3719c393e89864809237994c) | [ERROR](#c8cec92a3719c393e89864809237994c) | [ERROR](#c8cec92a3719c393e89864809237994c) | [ERROR](#c8cec92a3719c393e89864809237994c) |
-|[IPV6_ND_TARGET](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/31_IPV6_ND_TARGET.json)|- | [ERROR](#58bb5b87b10120375648d5dfa160d66d) | [ERROR](#58bb5b87b10120375648d5dfa160d66d) | [ERROR](#58bb5b87b10120375648d5dfa160d66d) | [ERROR](#58bb5b87b10120375648d5dfa160d66d) |
-|[IPV6_ND_SLL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/32_IPV6_ND_SLL.json)|- | [ERROR](#03e6c802327cd4456ae80d74286cc133) | [ERROR](#03e6c802327cd4456ae80d74286cc133) | [ERROR](#03e6c802327cd4456ae80d74286cc133) | [ERROR](#03e6c802327cd4456ae80d74286cc133) |
-|[IPV6_ND_TLL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/33_IPV6_ND_TLL.json)|- | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) |
+|[IPV6_ND_TARGET](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/31_IPV6_ND_TARGET.json)|- | [OK](#58bb5b87b10120375648d5dfa160d66d) | [OK](#58bb5b87b10120375648d5dfa160d66d) | [OK](#58bb5b87b10120375648d5dfa160d66d) | [ERROR](#58bb5b87b10120375648d5dfa160d66d) |
+|[IPV6_ND_SLL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/32_IPV6_ND_SLL.json)|- | [OK](#03e6c802327cd4456ae80d74286cc133) | [OK](#03e6c802327cd4456ae80d74286cc133) | [OK](#03e6c802327cd4456ae80d74286cc133) | [ERROR](#03e6c802327cd4456ae80d74286cc133) |
+|[IPV6_ND_TLL](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/33_IPV6_ND_TLL.json)|- | [OK](#561be672f9ebbcd43130be6c6014f0f5) | [OK](#561be672f9ebbcd43130be6c6014f0f5) | [OK](#561be672f9ebbcd43130be6c6014f0f5) | [ERROR](#561be672f9ebbcd43130be6c6014f0f5) |
 |[ARP_OP](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/21_ARP_OP.json)|- | [OK](#edeb0a1b010613250527e2a03c53b549) | [OK](#edeb0a1b010613250527e2a03c53b549) | [OK](#edeb0a1b010613250527e2a03c53b549) | [ERROR](#edeb0a1b010613250527e2a03c53b549) |
 |[ARP_SPA](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/22_ARP_SPA.json)|- | [OK](#191830a3949f9206a79ee85da5c0d7c3) | [OK](#191830a3949f9206a79ee85da5c0d7c3) | [OK](#191830a3949f9206a79ee85da5c0d7c3) | [ERROR](#191830a3949f9206a79ee85da5c0d7c3) |
 |[ARP_TPA](https://github.com/osrg/ryu/tree/master/ryu/tests/switch/of13/action/25_SET_FIELD/23_ARP_TPA.json)|- | [OK](#cef72d4ba1780a3c9b67b48a33eed3a7) | [OK](#cef72d4ba1780a3c9b67b48a33eed3a7) | [OK](#cef72d4ba1780a3c9b67b48a33eed3a7) | [ERROR](#cef72d4ba1780a3c9b67b48a33eed3a7) |
@@ -648,34 +648,25 @@ title: Ryu Certification - GitHub ovs
 </pre>
 <a name="58bb5b87b10120375648d5dfa160d66d">action: set_field: 31_IPV6_ND_TARGET</a>
 <pre>
-    ethernet/ipv6/icmpv6(data=nd_neighbor(dst='20::20'))-->'ipv6_nd_target=20::20,actions=set_field:a0::a0->ipv6_nd_target,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
-    ethernet/vlan/ipv6/icmpv6(data=nd_neighbor(dst='20::20'))-->'ipv6_nd_target=20::20,actions=set_field:a0::a0->ipv6_nd_target,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
-    ethernet/mpls/ipv6/icmpv6(data=nd_neighbor(dst='20::20'))-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_nd_target=20::20,actions=set_field:a0::a0->ipv6_nd_target,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
+    ethernet/ipv6/icmpv6(data=nd_neighbor(dst='20::20'))-->'ipv6_nd_target=20::20,actions=set_field:a0::a0->ipv6_nd_target,output:2' OK
+    ethernet/vlan/ipv6/icmpv6(data=nd_neighbor(dst='20::20'))-->'ipv6_nd_target=20::20,actions=set_field:a0::a0->ipv6_nd_target,output:2' OK
+    ethernet/mpls/ipv6/icmpv6(data=nd_neighbor(dst='20::20'))-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_nd_target=20::20,actions=set_field:a0::a0->ipv6_nd_target,output:2' OK
     ethernet/itag/ethernet/ipv6/icmpv6(data=nd_neighbor(dst='20::20'))-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_nd_target=20::20,actions=set_field:a0::a0->ipv6_nd_target,output:2' ERROR
         Failed to add flows: OFPErrorMsg[type=0x02, code=0x00]
 </pre>
 <a name="03e6c802327cd4456ae80d74286cc133">action: set_field: 32_IPV6_ND_SLL</a>
 <pre>
-    ethernet/ipv6/icmpv6(data=nd_neighbor(option=nd_option_sla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_sll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_sll,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
-    ethernet/vlan/ipv6/icmpv6(data=nd_neighbor(option=nd_option_sla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_sll=12:11:11:11:11,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_sll,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
-    ethernet/mpls/ipv6/icmpv6(data=nd_neighbor(option=nd_option_sla(hw_src='22:22:22:22:22:22')))-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_nd_sll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_sll,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
+    ethernet/ipv6/icmpv6(data=nd_neighbor(option=nd_option_sla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_sll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_sll,output:2' OK
+    ethernet/vlan/ipv6/icmpv6(data=nd_neighbor(option=nd_option_sla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_sll=12:11:11:11:11,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_sll,output:2' OK
+    ethernet/mpls/ipv6/icmpv6(data=nd_neighbor(option=nd_option_sla(hw_src='22:22:22:22:22:22')))-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_nd_sll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_sll,output:2' OK
     ethernet/itag/ethernet/ipv6/icmpv6(data=nd_neighbor(option=nd_option_sla(hw_src='22:22:22:22:22:22')))-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_nd_sll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_sll,output:2' ERROR
         Failed to add flows: OFPErrorMsg[type=0x02, code=0x00]
 </pre>
 <a name="561be672f9ebbcd43130be6c6014f0f5">action: set_field: 33_IPV6_ND_TLL</a>
 <pre>
-    ethernet/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
-    ethernet/vlan/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
-    ethernet/mpls/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' ERROR
-        Failed to add flows: OFPErrorMsg[type=0x02, code=0x0f]
+    ethernet/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' OK
+    ethernet/vlan/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' OK
+    ethernet/mpls/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'actions=pop_mpls:0x86dd,goto_table:1','table_id:1,ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' OK
     ethernet/itag/ethernet/ipv6/icmpv6(data=nd_neighbor(option=nd_option_tla(hw_src='22:22:22:22:22:22')))-->'actions=pop_pbb,goto_table:1','table_id:1,ipv6_nd_tll=22:22:22:22:22:22,actions=set_field:aa:aa:aa:aa:aa:aa->ipv6_nd_tll,output:2' ERROR
         Failed to add flows: OFPErrorMsg[type=0x02, code=0x00]
 </pre>
@@ -1865,31 +1856,31 @@ title: Ryu Certification - GitHub ovs
     2Mbps(ethernet/ipv6(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' OK
 ..........
     2Mbps(ethernet/arp(src_ip=random,dst_ip=random)-->'in_port=1,actions=group:select(actions=output:2/actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2036.25kbps
+        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2036.65kbps
 </pre>
 <a name="1677965b6b2cffd3c4d47b52b7629ca0">group: 01_SELECT_Weight_Ether</a>
 <pre>
 ..........
     2Mbps(ethernet(dst=random,src=random)/ipv4/tcp)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 505.84kbps, {'in_port': 3} 1512.44kbps
+        Received unexpected throughput: {'in_port': 2} 504.67kbps, {'in_port': 3} 1514.39kbps
 ..........
     2Mbps(ethernet(dst=random,src=random)/ipv6/tcp)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 524.98kbps, {'in_port': 3} 1496.43kbps
+        Received unexpected throughput: {'in_port': 2} 502.72kbps, {'in_port': 3} 1518.69kbps
 ..........
     2Mbps(ethernet(dst=random,src=random)/arp)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 512.09kbps, {'in_port': 3} 1505.41kbps
+        Received unexpected throughput: {'in_port': 2} 499.98kbps, {'in_port': 3} 1520.64kbps
 </pre>
 <a name="d52d0a95caf9ce38f77620354812c83c">group: 01_SELECT_Weight_IP</a>
 <pre>
 ..........
     2Mbps(ethernet/ipv4(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 516.37kbps, {'in_port': 3} 1519.05kbps
+        Received unexpected throughput: {'in_port': 2} 513.25kbps, {'in_port': 3} 1521.00kbps
 ..........
     2Mbps(ethernet/ipv6(src=random,dst=random)/tcp(src_port=random,dst_port=random))-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 500.76kbps, {'in_port': 3} 1526.89kbps
+        Received unexpected throughput: {'in_port': 2} 507.40kbps, {'in_port': 3} 1520.25kbps
 ..........
     2Mbps(ethernet/arp(src_ip=random,dst_ip=random)-->'in_port=1,actions=group:select(weight=1,actions=output:2/weight=2,actions=output:3)' ERROR
-        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2036.64kbps
+        Received unexpected throughput: {'in_port': 2} 0.00kbps, {'in_port': 3} 2037.04kbps
 </pre>
 <a name="9a2ce1d3a56a898592257439f05d22bf">meter: 01_DROP_00_KBPS_00_1M</a>
 <pre>
