@@ -4,7 +4,10 @@ title: Ryu Certification - /lanner-ovs
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
-* /lanner-ovs
+* Ryu - version 3.29
+* TESTER SWITCH - Lagopus (DPDK)
+* TARGET SWITCH - lanner-OS:Ubuntu 14.04.01
+*               - openvswitch 2.5.0
 
 | |OK|ERROR|
 |----------|---|---|
