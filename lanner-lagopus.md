@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ryu Certification - /lanner-lagopus
+title: Ryu Certification - /LANNER FW-7551-D Lagopus
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
