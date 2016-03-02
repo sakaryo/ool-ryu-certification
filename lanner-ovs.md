@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ryu Certification - /lanner-ovs
+title: Ryu Certification - /LANNER FW-7551-D openvswitach
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
