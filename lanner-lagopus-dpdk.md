@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ryu Certification - /lanner-lagopus-dpdk
+title: Ryu Certification - /LANNER-lagopus-dpdk
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
