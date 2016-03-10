@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Ryu Certification - /quanta-1048lb2
+title: Ryu Certification - /Quanta 1048-LB9(F-B)
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
-* /quanta-1048lb2
+* Ryu - version 3.29
+* TESTER SWITCH - Lagopus(DPDK)
+* TARGET SWITCH - Quanta 1048-LB9(F-B):Picos
 
 | |OK|ERROR|
 |----------|---|---|
