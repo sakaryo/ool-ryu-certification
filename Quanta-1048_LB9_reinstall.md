@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Ryu Certification - /Quanta-LB9-0315
+title: Ryu Certification - /Quanta-1048_LB9_reinstall
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
-* /Quanta-LB9-0315
-
+* Ryu - version 3.29
+* TESTER SWITCH - lagopus
+* TARGET SWITCH - Picos 
 | |OK|ERROR|
 |----------|---|---|
 |[Action](#Action)|0|56|
