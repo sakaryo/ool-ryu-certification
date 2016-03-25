@@ -4,7 +4,9 @@ title: Ryu Certification - /Centec v350
 ---
 
 # [Ryu Certification](http://osrg.github.io/ryu/certification.html)
-* /Centec v350
+* Ryu - version 3.29
+* TESTER SWITCH - LANNER OS:Ubuntu 14.04.01 - Lagopus(DPDK)
+* TARGET SWITCH - Centec V350
 
 | |OK|ERROR|
 |----------|---|---|
