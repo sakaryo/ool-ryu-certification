@@ -7,8 +7,8 @@ title: Ryu Certification - /nec 2
 * Ryu - version 3.29
 * TESTER SWITCH - Lanner OS:Ubuntu 14.04.01 - Lagopus(DPDK)
 * TARGET SWITCH - NEC PF5240F-48T4XW  OS-F3PA Ver. V5.1.1.1
-                - emergency-mode disable
-                - mac-learning disable 
+*     - emergency-mode disable
+*     - mac-learning disable 
 
 | |OK|ERROR|
 |----------|---|---|
